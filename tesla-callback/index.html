@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Signing in…</title>
+<body style="background:#161618;color:#ddd;font:17px -apple-system,sans-serif;margin:40px">
+<p>Returning to Dark Widgets…</p>
+<p><a id="l" style="color:#eee" href="#">Tap here if nothing happens</a></p>
+<script>
+  // Hand Tesla's sign-in result (code + state) back to the app. Nothing is stored or sent anywhere else.
+  var url = "darkwidgets://tesla-callback" + location.search;
+  document.getElementById("l").href = url;
+  location.replace(url);
+</script>
